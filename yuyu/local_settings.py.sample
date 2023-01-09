@@ -2,13 +2,13 @@ YUYU_NOTIFICATION_URL = "rabbit://openstack:password@127.0.0.1:5672/"
 YUYU_NOTIFICATION_TOPICS = ["notifications"]
 
 # Currency Configuration
-CURRENCIES = ('IDR',)
-DEFAULT_CURRENCY = "IDR"
+CURRENCIES = ('INR','USD')
+DEFAULT_CURRENCY = "INR"
 
 # Email Setting
 
-EMAIL_TAG = '[YUYU]'
-DEFAULT_FROM_EMAIL = 'no-reply@btech.id'
+EMAIL_TAG = '[Invoice]'
+DEFAULT_FROM_EMAIL = 'billing@yotta.com'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

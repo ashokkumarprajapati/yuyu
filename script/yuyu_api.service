@@ -6,7 +6,7 @@ After=network.target
 User=root
 Group=root
 WorkingDirectory={{yuyu_dir}}
-ExecStart={{yuyu_dir}}/env/bin/gunicorn yuyu.wsgi --workers 2 --bind 127.0.0.1:8182 --log-file=logs/gunicorn.log
+ExecStart={{yuyu_dir}}/env/bin/gunicorn yuyu.wsgi --workers 2 --bind 0.0.0.0:8182 --log-file=logs/gunicorn.log
 
 [Install]
 WantedBy=multi-user.target
